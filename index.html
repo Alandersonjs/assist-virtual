@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,30 @@
     <title>Assistente Virtual</title>
 </head>
 <body>
-    <h1>Assistente Virtual</h1>
-    <audio id="audio" src="\assistente_virtual\songs\assistente_virtual\songs\ACDC-Back In Black.mp3" type="audio/mpeg"></audio>
-    <button id="start-btn">Iniciar Reconhecimento de Voz</button>
-    <div id="output">Aguardando comando...</div>
-    <button id="play-pause-btn" data-playing="false" role="switch" aria-checked="false">
-        <span>Play/Pause</span>
-    </button>
-      
+    <header>
+        <h1>Assistente Virtual</h1>
+    </header>
+    
+    <main>
+        <section aria-labelledby="animation-section">
+            <iframe src="https://giphy.com/embed/u5IJdDXKFfGWi01ydS" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <p><a href="https://giphy.com/gifs/ui-hologram-rocktopus-u5IJdDXKFfGWi01ydS">via GIPHY</a></p>
+        </section>
+        <section aria-labelledby="audio-section">
+            <audio id="audio" src="Q Train - Adam MacDougall.mp3" controls></audio>
+        </section>
+        <section aria-labelledby="voice-control-section">
+            <h2 id="voice-control-section">Controle de Voz</h2>
+            <button id="start-btn">Iniciar Reconhecimento de Voz</button>
+            <p id="output" aria-live="polite">Aguardando comando...</p>
+        </section>
+        
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Assistente Virtual</p>
+    </footer>
 
     <script src="app.js"></script>
 </body>
